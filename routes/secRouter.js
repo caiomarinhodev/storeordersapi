@@ -15,7 +15,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 secRouter.post('/login', express.json(), (req, res) => {
-    const { login, password } = req.body;
+    const { login, senha } = req.body;
     knex.select('*').from('usuario').where('login', login).then(function (result) {
         if (result.length > 0) {
             let usuario = result[0];

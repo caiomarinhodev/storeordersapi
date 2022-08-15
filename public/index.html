@@ -55,6 +55,33 @@
             <h2 class="text-uppercase text-center text-secondary mb-0">API</h2>
             <hr class="star-dark mb-5">
             <div class="row">
+                <div class="col-lg-12">
+                    <p>You can see more information on how to implement an application to consume this API in the links
+                        below. Below is an example of an application built with Django Framework that consumes this API.
+                        Specifically, it's detailed in the "request_api.py" file, where this interface makes calls to
+                        the backend.</p>
+
+                    <p>
+                        "request_api.py":
+                        <a href="https://github.com/caiomarinhodev/storeorders/blob/master/app/request_api.py"
+                            target="_blank">
+                            https://github.com/caiomarinhodev/storeorders/blob/master/app/request_api.py
+                        </a>
+                    </p>
+
+                    <p>Github StoreOrdersApp (Frontend):
+                        <a href="https://github.com/caiomarinhodev/storeorders" target="_blank">
+                            https://github.com/caiomarinhodev/storeorders
+                        </a>
+                    </p>
+
+                    <p>
+                        App no Heroku:
+                        <a href="https://storeordersapp.herokuapp.com/" target="_blank">
+                            https://storeordersapp.herokuapp.com/
+                        </a>
+                    </p>
+                </div>
                 <div class="col-lg-12 mx-auto">
                     <div class="container bg-white border rounded border-white shadow-sm main">
                         <h2><span>#1</span>&nbsp;Step</h2>
@@ -73,10 +100,10 @@
                         <code class="blockquote">
                             <p>
                                 {
-                                "name": "Test User",
+                                "nome": "Test User",
                                 "login": "user",
                                 "email": "user@gmail.com",
-                                "password": "123456"
+                                "senha": "123456"
                                 }
                             </p>
                         </code>
@@ -121,7 +148,7 @@
                         </code>
                     </div>
                 </div>
-                <br/>
+                <br />
                 <div class="col-lg-12 mx-auto" style="margin-top: 16px;">
                     <div class="container bg-white border rounded border-white shadow-sm main">
                         <h2><span>#3</span>&nbsp;Step</h2>
@@ -170,17 +197,17 @@
                                             [
                                                 {
                                                 "id": 2,
-                                                "client_name": "Maria",
+                                                "nome_cliente": "Maria",
                                                 "id_status": 1,
-                                                "total_value": 10,
-                                                "note": "Test order"
+                                                "valor_total": 10,
+                                                "observacao": "Test order"
                                                 },
                                                 {
                                                 "id": 3,
-                                                "client_name": "Joseph",
+                                                "nome_cliente": "Joseph",
                                                 "id_status": 1,
-                                                "total_value": 10,
-                                                "note": "Test order"
+                                                "valor_total": 10,
+                                                "observacao": "Test order"
                                                 }
                                             ]
                                         </code>
@@ -206,10 +233,10 @@
                                         <p>Example Payload to send in request:</p>
                                         <code>
                                                 {
-                                                    "client_name": "New",
+                                                    "nome_cliente": "New",
                                                     "id_status": 1,
-                                                    "total_value": 10,
-                                                    "note": "New order"
+                                                    "valor_total": 10,
+                                                    "observacao": "New order"
                                                  }
                                         </code>
                                     </div>
@@ -249,13 +276,13 @@
                                     <div class="card-body">
                                         <p>Here you can change the details of a specific order.
                                         </p>
-                                        <p>Example Paylod to send in request:</p>
+                                        <p>Example Payload to send in request:</p>
                                         <code>
                                             {
-                                                "client_name": "New",
+                                                "nome_cliente": "New",
                                                 "id_status": 2,
-                                                "total_value": 15,
-                                                "note": "Update in this Order"
+                                                "valor_total": 15,
+                                                "observacao": "Update in this Order"
                                             }
                                         </code>
                                     </div>
